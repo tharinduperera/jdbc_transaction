@@ -26,5 +26,7 @@ public class EmployeeController {
     }
 
     public void txtsalaryOnAction(ActionEvent actionEvent) {
+        int salary = Integer.parseInt(txtsalary.getText().trim());
+        txtEtf.setText((salary*0.1)+"");
     }
 }
