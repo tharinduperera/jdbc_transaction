@@ -13,8 +13,8 @@
          </font></Label>
       <TextField fx:id="txtsalary" layoutX="34.0" layoutY="112.0" onAction="#txtsalaryOnAction" promptText="Salary" />
       <TextField fx:id="txtname" layoutX="206.0" layoutY="77.0" promptText="Employee Name" />
-      <Button fx:id="btnSave" layoutX="134.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
-      <Button fx:id="btnRemove" layoutX="205.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" text="Remove" />
+      <Button fx:id="btnSave" layoutX="34.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnSaveOnAction" text="Save" />
+      <Button fx:id="btnRemove" layoutX="99.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnRemoveOnAction" text="Remove" />
       <TextField fx:id="txtEtf" layoutX="206.0" layoutY="112.0" promptText="ETF" />
       <TableView fx:id="tblEmployee" layoutX="20.0" layoutY="203.0" prefHeight="132.0" prefWidth="343.0">
         <columns>
@@ -24,5 +24,6 @@
             <TableColumn prefWidth="83.0" text="ETF" />
         </columns>
       </TableView>
+      <Button fx:id="btnAdd" layoutX="251.0" layoutY="155.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="104.0" text="Add to Table" />
    </children>
 </AnchorPane>
