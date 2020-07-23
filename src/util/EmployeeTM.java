@@ -1,27 +1,29 @@
 package util;
 
 
+import java.math.BigDecimal;
+
 public class EmployeeTM {
-    private int id;
+    private String id;
     private String name;
-    private double salary;
-    private double etf;
+    private BigDecimal salary;
+    private BigDecimal etf;
 
     public EmployeeTM() {
     }
 
-    public EmployeeTM(int id, String name, double salary, double etf) {
+    public EmployeeTM(String id, String name, BigDecimal salary, BigDecimal etf) {
         this.id = id;
         this.name = name;
         this.salary = salary;
         this.etf = etf;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -33,26 +35,26 @@ public class EmployeeTM {
         this.name = name;
     }
 
-    public double getSalary() {
+    public BigDecimal getSalary() {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(BigDecimal salary) {
         this.salary = salary;
     }
 
-    public double getEtf() {
+    public BigDecimal getEtf() {
         return etf;
     }
 
-    public void setEtf(double etf) {
+    public void setEtf(BigDecimal etf) {
         this.etf = etf;
     }
 
     @Override
     public String toString() {
         return "EmployeeTM{" +
-                "id=" + id +
+                "id='" + id + '\'' +
                 ", name='" + name + '\'' +
                 ", salary=" + salary +
                 ", etf=" + etf +
